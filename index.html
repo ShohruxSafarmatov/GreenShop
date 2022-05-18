@@ -1,15 +1,732 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lesson</title>
+  <title>GreenShop</title>
+  <!-- ============================== SLICK CSS============================== -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <!-- ============================== FONTS CSS============================== -->
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+
+  <!-- ============================== STYLE CSS============================== -->
   <link rel="stylesheet" href="css/flexboxgrid.min.css">
   <link rel="stylesheet" href="css/main.min.css">
 </head>
+
 <body>
+
+  <!-- ============================== HEADER START============================== -->
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__body">
+        <a class="header__logo-link" href="index.html">
+          <img class="header__logo-img" src="img/Header-img/site-logo.svg" alt="logo">
+          <span class="header__link-title">GREENSHOP</span>
+        </a>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link active" href="#">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Shop</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Plant Care</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Blogs</a></li>
+          </ul>
+        </nav>
+        <div class="header__box">
+          <a class="header__search" href="#"><img src="img/Header-img/search.svg" alt="search-logo"></a>
+          <a class="header__cart" href="#"><img src="img/Header-img/cart.svg" alt="cart-logo"><span class="header__cart-span">6</span></a>
+          <a class="header__logout" href="#"><img class="header__logout-logo" src="img/Header-img/Logout.svg"
+              alt="logout-logo">
+            <span class="header__logout-text">Login</span></a>
+        </div>
+        <form class="header__form">
+          <input class="header__search-input" type="text" placeholder="Find your plants">
+          <button class="header__search-btn"><img src="img/Header-img/search-form.svg" alt="logo"></button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <!-- ============================== HEADER END============================== -->
+
+  <!-- ============================== MAIN START============================== -->
+  <main>
+    <!-- ============================== HERO START============================== -->
+    <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__slider slider" id="imgs">
+          <div class="hero__body">
+            <div class="hero__box">
+              <h2 class="hero__title">Welcome to GreenShop</h2>
+              <h3 class="hero__subtitle">Let’s Make a Better <span class="hero__subtitle-span">Planet</span></h3>
+              <p class="hero__text">We are an online plant shop offering a wide range of cheap and trendy plants. Use
+                our
+                plants to create an
+                unique Urban Jungle. Order your favorite plants!</p>
+              <a class="hero__btn" href="#">SHOP NOW</a>
+            </div>
+            <img class="hero__img" src="img/Header-img/slider-img1.png" alt="img">
+          </div>
+          <div class="hero__body">
+            <div class="hero__box">
+              <h2 class="hero__title">Welcome to GreenShop</h2>
+              <h3 class="hero__subtitle">Let’s Make a Better <span class="hero__subtitle-span">Planet</span></h3>
+              <p class="hero__text">We are an online plant shop offering a wide range of cheap and trendy plants. Use
+                our
+                plants to create an
+                unique Urban Jungle. Order your favorite plants!</p>
+              <a class="hero__btn" href="#">SHOP NOW</a>
+            </div>
+            <img class="hero__img" src="img/Header-img/slider-img1.png" alt="img">
+          </div>
+          <div class="hero__body">
+            <div class="hero__box">
+              <h2 class="hero__title">Welcome to GreenShop</h2>
+              <h3 class="hero__subtitle">Let’s Make a Better <span class="hero__subtitle-span">Planet</span></h3>
+              <p class="hero__text">We are an online plant shop offering a wide range of cheap and trendy plants. Use
+                our
+                plants to create an
+                unique Urban Jungle. Order your favorite plants!</p>
+              <a class="hero__btn" href="#">SHOP NOW</a>
+            </div>
+            <img class="hero__img" src="img/Header-img/slider-img1.png" alt="img">
+          </div>
+          <div class="hero__body">
+            <div class="hero__box">
+              <h2 class="hero__title">Welcome to GreenShop</h2>
+              <h3 class="hero__subtitle">Let’s Make a Better <span class="hero__subtitle-span">Planet</span></h3>
+              <p class="hero__text">We are an online plant shop offering a wide range of cheap and trendy plants. Use
+                our
+                plants to create an
+                unique Urban Jungle. Order your favorite plants!</p>
+              <a class="hero__btn" href="#">SHOP NOW</a>
+            </div>
+            <img class="hero__img" src="img/Header-img/slider-img1.png" alt="img">
+          </div>
+
+
+          <div class="slider__btns">
+            <button class="slider__btn" id="1"></button>
+            <button class="slider__btn" id="2"></button>
+            <button class="slider__btn" id="3"></button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- ============================== HERO END============================== -->
+
+    <!-- ============================== PRODUCTS START============================== -->
+    <section class="products">
+      <div class="products__container container">
+        <div class="products__body">
+          <div class="products__left-content">
+            <div class="products__categories categories">
+              <h2 class="categories__title">Categories</h2>
+              <ul class="categories__list">
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    House Plants
+                    <span>(33)</span>
+                  </a>
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    Potter Plants
+                    <span>(12)</span>
+                  </a>
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    Seeds
+                    <span>(65)</span>
+                  </a>
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    Small Plants
+                    <span>(39)</span>
+                  </a>
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    Big Plants
+                    <span>(23)</span>
+                  </a>
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    Succulents
+                    <span>(17)</span>
+                  </a>
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    Terrariums
+                    <span>(19)</span>
+                  </a>
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    Gardening
+                    <span>(13)</span>
+                  </a>
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    Accessories
+                    <span>(18)</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="products__size size">
+              <h2 class="products__title">Size</h2>
+              <ul class="products__size-list">
+                <li class="products__size-item">
+                  <a class="products__size-link" href="#">
+                    Small
+                    <span>(119)</span>
+                  </a>
+                </li>
+                <li class="products__size-item">
+                  <a class="products__size-link" href="#">
+                    Medium
+                    <span>(86)</span>
+                  </a>
+                </li>
+                <li class="products__size-item">
+                  <a class="products__size-link" href="#">
+                    Large
+                    <span>(78)</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="products__super-sale">
+              <img class="products__sale-img" src="img/Header-img/products-img.png" alt="img">
+            </div>
+
+          </div>
+          <div class="products__home">
+            <div class="products__top-content">
+              <ul class="products__top-list">
+                <li class="products__top-item"><a class="products__top-link-active" href="#">All plants</a></li>
+                <li class="products__top-item"><a class="products__top-link" href="#">New Arrivals</a></li>
+                <li class="products__top-item"><a class="products__top-link" href="#">Sale</a></li>
+              </ul>
+              <div class="products__selects">
+                <span class="products__select-span">Short by:</span>
+                <select class="products__select">
+                  <option class="products__option" value="default">Default sorting</option>
+                  <option class="products__option" value="growth">Growth</option>
+                  <option class="products__option" value="decreas">Decreas</option>
+                </select>
+              </div>
+            </div>
+            <div class="products__home-cards card">
+              <ul class="card__list">
+                <li class="card__item">
+                  <a class="card__link" href="#">
+                    <img class="card__link-img" src="img/Header-img/cardimg1.png" alt="img">
+                    <span class="card__link-text"> Barberton Daisy</span>
+                    <span class="card__link-span">$119.00</span>
+                  </a>
+                  <div class="card__link-products link">
+                    <ul class="link__products-list">
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img src="img/Header-img/search.svg" alt="logo">
+                        </a>
+                      </li>
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img src="img/Header-img/cart.svg" alt="logo">
+                        </a>
+                      </li>
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img class="link__products-img" src="img/Header-img/heart.svg" alt="logo">
+                        </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </li>
+                <li class="card__item">
+                  <a class="card__link" href="#">
+                    <img class="card__link-img" src="img/Header-img/cardimg2.png" alt="img">
+                    <span class="card__link-text"> Angel Wing Begonia</span>
+                    <span class="card__link-span">$169.00</span>
+                  </a>
+                  <div class="card__link-products link">
+                    <ul class="link__products-list">
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img src="img/Header-img/search.svg" alt="logo">
+                        </a>
+                      </li>
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img src="img/Header-img/cart.svg" alt="logo">
+                        </a>
+                      </li>
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img class="link__products-img" src="img/Header-img/heart.svg" alt="logo">
+                        </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </li>
+                <li class="card__item">
+                  <a class="card__link" href="#">
+                    <img class="card__link-img" src="img/Header-img/cardimg3.png" alt="img">
+                    <span class="card__link-discount">13% OFF</span>
+                    <span class="card__link-text">African Violet</span>
+                    <div class="card__link-price">
+                      <span class="card__link-span">$199.00</span>
+                      <span class="card__link-spanline">$229.00</span>
+                    </div>
+
+                  </a>
+                  <div class="card__link-products link">
+                    <ul class="link__products-list">
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img src="img/Header-img/search.svg" alt="logo">
+                        </a>
+                      </li>
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img src="img/Header-img/cart.svg" alt="logo">
+                        </a>
+                      </li>
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img class="link__products-img" src="img/Header-img/heart.svg" alt="logo">
+                        </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </li>
+                <li class="card__item">
+                  <a class="card__link" href="#">
+                    <img class="card__link-img" src="img/Header-img/cardimg4.png" alt="img">
+                    <span class="card__link-text">Beach Spider Lily</span>
+                    <span class="card__link-span">$129.00</span>
+                  </a>
+                  <div class="card__link-products link">
+                    <ul class="link__products-list">
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img src="img/Header-img/search.svg" alt="logo">
+                        </a>
+                      </li>
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img src="img/Header-img/cart.svg" alt="logo">
+                        </a>
+                      </li>
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img class="link__products-img" src="img/Header-img/heart.svg" alt="logo">
+                        </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </li>
+                <li class="card__item">
+                  <a class="card__link" href="#">
+                    <img class="card__link-img" src="img/Header-img/cardimg5.png" alt="img">
+                    <span class="card__link-text">Blushing Bromeliad</span>
+                    <span class="card__link-span">$139.00</span>
+                  </a>
+                  <div class="card__link-products link">
+                    <ul class="link__products-list">
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img src="img/Header-img/search.svg" alt="logo">
+                        </a>
+                      </li>
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img src="img/Header-img/cart.svg" alt="logo">
+                        </a>
+                      </li>
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img class="link__products-img" src="img/Header-img/heart.svg" alt="logo">
+                        </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </li>
+                <li class="card__item">
+                  <a class="card__link" href="#">
+                    <img class="card__link-img" src="img/Header-img/cardimg6.png" alt="img">
+                    <span class="card__link-text">Aluminum Plant</span>
+                    <span class="card__link-span">$179.00</span>
+                  </a>
+                  <div class="card__link-products link">
+                    <ul class="link__products-list">
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img src="img/Header-img/search.svg" alt="logo">
+                        </a>
+                      </li>
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img src="img/Header-img/cart.svg" alt="logo">
+                        </a>
+                      </li>
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img class="link__products-img" src="img/Header-img/heart.svg" alt="logo">
+                        </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </li>
+                <li class="card__item">
+                  <a class="card__link" href="#">
+                    <img class="card__link-img" src="img/Header-img/cardimg7.png" alt="img">
+                    <span class="card__link-text">Bird's Nest Fern</span>
+                    <span class="card__link-span">$99.00</span>
+                  </a>
+                  <div class="card__link-products link">
+                    <ul class="link__products-list">
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img src="img/Header-img/search.svg" alt="logo">
+                        </a>
+                      </li>
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img src="img/Header-img/cart.svg" alt="logo">
+                        </a>
+                      </li>
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img class="link__products-img" src="img/Header-img/heart.svg" alt="logo">
+                        </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </li>
+                <li class="card__item">
+                  <a class="card__link" href="#">
+                    <img class="card__link-img" src="img/Header-img/cardimg8.png" alt="img">
+                    <span class="card__link-text">Broadleaf Lady Palm</span>
+                    <span class="card__link-span">$59.00</span>
+                  </a>
+                  <div class="card__link-products link">
+                    <ul class="link__products-list">
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img src="img/Header-img/search.svg" alt="logo">
+                        </a>
+                      </li>
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img src="img/Header-img/cart.svg" alt="logo">
+                        </a>
+                      </li>
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img class="link__products-img" src="img/Header-img/heart.svg" alt="logo">
+                        </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </li>
+                <li class="card__item">
+                  <a class="card__link" href="#">
+                    <img class="card__link-img" src="img/Header-img/cardimg9.png" alt="img">
+                    <span class="card__link-text">Chinese Evergreen</span>
+                    <span class="card__link-span">$39.00</span>
+                  </a>
+                  <div class="card__link-products link">
+                    <ul class="link__products-list">
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img src="img/Header-img/search.svg" alt="logo">
+                        </a>
+                      </li>
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img src="img/Header-img/cart.svg" alt="logo">
+                        </a>
+                      </li>
+                      <li class="link__products-item">
+                        <a class="link__products-link" href="#">
+                          <img class="link__products-img" src="img/Header-img/heart.svg" alt="logo">
+                        </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="products__pagination">
+              <button class="products__pagination-btn">1</button>
+              <button class="products__pagination-btn">2</button>
+              <button class="products__pagination-btn">3</button>
+              <button class="products__pagination-btn">4</button>
+              <button class="products__pagination-btn">
+                <img class="products__pagination-logo" src="img/Header-img/ArrowRight.svg" alt="logo"></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- ============================== PRODUCTS END============================== -->
+
+    <!-- ============================== POPULAR START============================== -->
+    <section class="popular">
+      <div class="popular__container container">
+        <div class="popular__body">
+          <ul class="popular__list">
+            <li class="popular__item won">
+              <div class="popular__item-box">
+                <h2 class="popular__item-title">Summer cactus & succulents</h2>
+                <p class="popular__item-text">We are an online plant shop offering a wide range of cheap and trendy
+                  plants</p>
+                <a class="popular__item-link" href="#">Find More</a>
+              </div>
+
+            </li>
+            <li class="popular__item two">
+              <div class="popular__item-box">
+                <h2 class="popular__item-title">Styling Trends & much more</h2>
+                <p class="popular__item-text">We are an online plant shop offering a wide range of cheap and trendy
+                  plants</p>
+                <a class="popular__item-link" href="#">Find More</a>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- ============================== POPULAR END============================== -->
+
+    <!-- ============================== POSTS START============================== -->
+    <section class="posts">
+      <div class="posts__container container">
+        <div class="posts__body">
+          <h2 class="posts__body-title">Our Blog Posts</h2>
+          <p class="posts__text">We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+          <ul class="posts__list">
+            <li class="posts__item">
+              <img class="posts__img" src="img/Header-img/postsImg1.webp" alt="img">
+              <div class="posts__box">
+                <h3 class="posts__title">September 12 I Read in 6 minutes</h3>
+                <h4 class="posts__subtitle">Cactus & Succulent Care Tips</h4>
+                <p class="posts__subtext">Cacti are succulents are easy care plants for any home or patio.</p>
+                <a class="posts__link" href="#">Read More <img class="posts__link-img"
+                    src="img/Header-img/ArrowRight3.svg" alt="img"></a>
+              </div>
+            </li>
+            <li class="posts__item">
+              <img class="posts__img" src="img/Header-img/postsImg2.webp" alt="img">
+              <div class="posts__box">
+                <h3 class="posts__title">September 12 I Read in 6 minutes</h3>
+                <h4 class="posts__subtitle">Cactus & Succulent Care Tips</h4>
+                <p class="posts__subtext">Cacti are succulents are easy care plants for any home or patio.</p>
+                <a class="posts__link" href="#">Read More <img class="posts__link-img"
+                    src="img/Header-img/ArrowRight3.svg" alt="img"></a>
+              </div>
+            </li>
+            <li class="posts__item">
+              <img class="posts__img" src="img/Header-img/postsImg3.webp" alt="img">
+              <div class="posts__box">
+                <h3 class="posts__title">September 12 I Read in 6 minutes</h3>
+                <h4 class="posts__subtitle">Cactus & Succulent Care Tips</h4>
+                <p class="posts__subtext">Cacti are succulents are easy care plants for any home or patio.</p>
+                <a class="posts__link" href="#">Read More <img class="posts__link-img"
+                    src="img/Header-img/ArrowRight3.svg" alt="img"></a>
+              </div>
+            </li>
+            <li class="posts__item">
+              <img class="posts__img" src="img/Header-img/postsImg4.webp" alt="img">
+              <div class="posts__box">
+                <h3 class="posts__title">September 12 I Read in 6 minutes</h3>
+                <h4 class="posts__subtitle">Cactus & Succulent Care Tips</h4>
+                <p class="posts__subtext">Cacti are succulents are easy care plants for any home or patio.</p>
+                <a class="posts__link" href="#">Read More <img class="posts__link-img"
+                    src="img/Header-img/ArrowRight3.svg" alt="img"></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+    <!-- ============================== POSTS END============================== -->
+
+    <!-- ============================== NEWSLETTER START============================== -->
+    <section class="newsletter">
+      <div class="newsletter__container container">
+        <div class="newsletter__body">
+          <ul class="newsletter__list">
+            <li class="newsletter__item">
+              <img class="newsletter__item-img" src="img/Header-img/newsletterImg1.webp" alt="img">
+              <h2 class="newsletter__item-title">Garden Care</h2>
+              <p class="newsletter__item-text">We are an online plant shop offering a wide range of cheap and trendy
+                plants.</p>
+            </li>
+            <li class="newsletter__item">
+              <img class="newsletter__item-img" src="img/Header-img/newsletterImg2.webp" alt="img">
+              <h2 class="newsletter__item-title">Garden Care</h2>
+              <p class="newsletter__item-text">We are an online plant shop offering a wide range of cheap and trendy
+                plants.</p>
+            </li>
+            <li class="newsletter__item">
+              <img class="newsletter__item-img" src="img/Header-img/newsletterImg3.webp" alt="img">
+              <h2 class="newsletter__item-title">Plant Renovation</h2>
+              <p class="newsletter__item-text">We are an online plant shop offering a wide range of cheap and trendy
+                plants.</p>
+            </li>
+          </ul>
+          <div class="newsletter__email content">
+            <h2 class="content__title">Would you like to join newsletters?</h2>
+            <form class="content__form">
+              <div class="content__form-box">
+                <input class="content__form-input" type="email" placeholder="enter your email address...">
+              </div>
+              <button class="content__form-btn">Join</button>
+            </form>
+            <p class="content__text">We usually post offers and challenges in newsletter. We’re your online houseplant
+              destination. We offer a wide range of houseplants and accessories shipped directly from our (green)house
+              to yours!</p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </section>
+    <!-- ============================== NEWSLETTER START============================== -->
+
+    <!-- ============================== ADRESS START============================== -->
+    <section class="adress">
+      <div class="adress__container container">
+        <ul class="adress__list">
+          <li class="adress__item">
+            <a class="adress__link-logo" href="index.html">
+              <img class="adress__logo-img" src="img/Header-img/site-logo.svg" alt="logo">
+              <h2 class="adress__link-title">GREENSHOP</h2>
+            </a>
+          </li>
+          <li class="adress__item"><a class="adress__link" href="#"><img class="adress__link-img"
+                src="img/Header-img/Location.svg" alt="img">
+              70 West Buckingham Ave. Farmingdale, NY 11735
+            </a></li>
+          <li class="adress__item"><a class="adress__link" href="#"><img class="adress__link-img"
+                src="img/Header-img/Message.svg" alt="img">
+              contact@greenshop.com
+            </a>
+          </li>
+          <li class="adress__item"><a class="adress__link" href="tel:+8801911717490"><img class="adress__link-img"
+                src="img/Header-img/Calling.svg" alt="img">
+              +88 01911 717 490
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+    <!-- ============================== ADRESS END============================== -->
+  </main>
+  <!-- ============================== MAIN END============================== -->
+
+  <!-- ============================== FOOTER START============================== -->
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__body">
+        <ul class="footer__list">
+          <li class="footer__item account">
+            <ul class="account__list">
+              <li class="account__item"><a class="account__link-active" href="#">My Account</a></li>
+              <li class="account__item"><a class="account__link" href="#">My Account</a></li>
+              <li class="account__item"><a class="account__link" href="#">Our stores</a></li>
+              <li class="account__item"><a class="account__link" href="#">Contact us </a></li>
+              <li class="account__item"><a class="account__link" href="#">Career</a></li>
+              <li class="account__item"><a class="account__link" href="#">Specials</a></li>
+            </ul>
+          </li>
+          <li class="footer__item guide">
+            <ul class="guide__list">
+              <li class="guide__item"><a class="guide__link-active" href="#">Help & Guide</a></li>
+              <li class="guide__item"><a class="guide__link" href="#">Help Center </a></li>
+              <li class="guide__item"><a class="guide__link" href="#">How to Buy</a></li>
+              <li class="guide__item"><a class="guide__link" href="#">Shipping & Delivery</a></li>
+              <li class="guide__item"><a class="guide__link" href="#">Product Policy</a></li>
+              <li class="guide__item"><a class="guide__link" href="#">How to Return</a></li>
+            </ul>
+          </li>
+          <li class="footer__item category">
+            <ul class="category__list">
+              <li class="category__item"><a class="category__link-active" href="#">Categories</a></li>
+              <li class="category__item"><a class="category__link" href="#">House Plants</a></li>
+              <li class="category__item"><a class="category__link" href="#">Potter Plants</a></li>
+              <li class="category__item"><a class="category__link" href="#">Seeds</a></li>
+              <li class="category__item"><a class="category__link" href="#">Small Plants</a></li>
+              <li class="category__item"><a class="category__link" href="#">Accessories</a></li>
+            </ul>
+          </li>
+          <li class="footer__item accept">
+            <div class="accept__social">
+              <h2 class="accept__social-title">Social Media</h2>
+              <ul class="accept__social-list">
+                <li class="accept__social-item"><a class="accept__social-link" href="https://www.facebook.com/"><img
+                      src="img/Header-img/Facebook.svg" alt="logo"></a></li>
+                <li class="accept__social-item"><a class="accept__social-link" href="https://www.instagram.com/"><img
+                      src="img/Header-img/Instagram.svg" alt="logo"></a></li>
+                <li class="accept__social-item"><a class="accept__social-link" href="https://www.twitter.com/"><img
+                      src="img/Header-img/Twitter.svg" alt="logo"></a></li>
+                <li class="accept__social-item"><a class="accept__social-link" href="https://www.linkedin.com/"><img
+                      src="img/Header-img/Linkedin.svg" alt="logo"></a></li>
+                <li class="accept__social-item"><a class="accept__social-link" href="https://www.unionbank.com/"><img
+                      src="img/Header-img/Union.svg" alt="logo"></a></li>
+              </ul>
+            </div>
+            <div class="accept__cash">
+              <h2 class="accept__cash-title">We accept</h2>
+              <img src="img/Header-img/cash.svg" alt="img">
+            </div>
+
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- ============================== FOOTER END============================== -->
+
+  <!-- ============================== JQUERY============================== -->
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <!-- ============================== JQUERY SLICK============================== -->
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- ============================== MAIN JS============================== -->
 
   <script src="js/main.js"></script>
 </body>
+
 </html>

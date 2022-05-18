@@ -1,0 +1,171 @@
+.popular__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.popular__item {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+    width: 586px;
+    height: 218px;
+    background-color: #fbfbfb;
+    padding: 37px 30px;
+
+}
+
+.won {
+    &::before {
+        content: '';
+        display: block;
+        width: 200px;
+        height: 245px;
+        background-image: url('/img/Header-img/cardimg5.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        bottom: 15px;
+
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 65px;
+        height: 100px;
+        background-image: url(/img/Header-img/popular-img3.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+}
+
+.two {
+    &::before {
+        content: '';
+        display: block;
+        width: 200px;
+        height: 245px;
+        background-image: url('/img/Header-img/cardimg3.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        bottom: 15px;
+
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 65px;
+        height: 100px;
+        background-image: url(/img/Header-img/popular-img3.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+}
+
+.popular__item-img {
+    position: absolute;
+    left: -50px;
+}
+
+.popular__item-box {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.popular__item-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #3D3D3D;
+    width: 150px;
+    margin-bottom: 9px;
+}
+
+.popular__item-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: right;
+    color: #727272;
+    width: 283px;
+    margin-bottom: 25px;
+}
+
+.popular__item-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding: 10px 27px;
+    background: #46A358;
+    border-radius: 6px;
+    position: relative;
+
+    &:hover {
+        background-color: #177a2b;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        width: 19px;
+        height: 15px;
+        background-image: url(/img/Header-img/ArrowRight2.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 6px;
+        bottom: 13px;
+        transition: all 0.4s ease;
+
+    }
+
+    &:hover::before {
+        transition: all 0.4s ease;
+        right: 3px;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .popular__item-text {
+        width: 230px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .popular__list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+    }
+
+    .popular__item {
+        width: 100%;
+
+    }
+
+    .popular__item-text {
+        width: 350px;
+    }
+
+}
