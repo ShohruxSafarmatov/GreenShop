@@ -1986,6 +1986,24 @@ a {
   padding: 7px;
   border: 1px solid rgba(70, 163, 88, 0.2);
   border-radius: 4px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.accept__social-link:hover .bx {
+  color: #fff;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.accept__social-link:hover {
+  background: #46A358;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.bx {
+  color: #46A358;
 }
 
 .accept__cash {
