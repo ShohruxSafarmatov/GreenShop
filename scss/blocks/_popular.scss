@@ -169,3 +169,22 @@
     }
 
 }
+
+@media screen and (max-width: 768px) {
+    .popular__item-box {
+        width: 130px;
+    }
+
+    .popular__item-title {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .popular__item-text {
+        width: 135px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+
+}
