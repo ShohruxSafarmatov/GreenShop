@@ -2046,7 +2046,7 @@ a {
 }
 
 .accept__social {
-  width: 190px;
+  width: 230px;
   margin-bottom: 35px;
 }
 
@@ -2098,5 +2098,19 @@ a {
 
 .accept__cash {
   width: 224px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    row-gap: 25px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

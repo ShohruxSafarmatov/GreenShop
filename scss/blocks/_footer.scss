@@ -46,7 +46,7 @@
 }
 
 .accept__social {
-    width: 190px;
+    width: 230px;
     margin-bottom: 35px;
 
 }
@@ -97,3 +97,11 @@
 }
 
 
+@media screen and (max-width: 768px) {
+    .footer__list {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 25px;
+    }
+}
