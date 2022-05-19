@@ -454,7 +454,7 @@
     border-radius: 6px;
     transition: all 0.4s ease;
 
-    &:hover{
+    &:hover {
         background-color: #177a2b;
         transition: all 0.4s ease;
     }
@@ -509,6 +509,13 @@
         width: 100%;
         margin: 20px 0;
     }
+    .products__top-link-active{
+        font-size: 13px;
+    }
+
+    .products__top-link {
+        font-size: 13px;
+    }
 
     .products__left-content {
         width: 100%;
@@ -521,12 +528,26 @@
     .products__sale-img {
         width: 100%;
     }
-    .card__item{
+
+    .card__item {
         width: 100%;
     }
+
     .card__link-img {
         width: 100%;
         height: auto;
-
     }
+
+    .products__top-list {
+        width: 165px;
+    }
+
+    .products__select-span {
+        font-size: 13px;
+    }
+
+    .products__select {
+        font-size: 80%;
+    }
+    
 }

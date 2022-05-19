@@ -610,6 +610,7 @@ a {
           transform: translate(-50%, -50%);
   right: 50%;
   left: -100%;
+  z-index: 1;
 }
 
 .header__search-input {
@@ -1463,6 +1464,12 @@ a {
     width: 100%;
     margin: 20px 0;
   }
+  .products__top-link-active {
+    font-size: 13px;
+  }
+  .products__top-link {
+    font-size: 13px;
+  }
   .products__left-content {
     width: 100%;
   }
@@ -1478,6 +1485,15 @@ a {
   .card__link-img {
     width: 100%;
     height: auto;
+  }
+  .products__top-list {
+    width: 165px;
+  }
+  .products__select-span {
+    font-size: 13px;
+  }
+  .products__select {
+    font-size: 80%;
   }
 }
 
